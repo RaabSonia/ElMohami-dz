@@ -1,4 +1,4 @@
-import React,{ useState } from 'react';
+import React,{ useState , useRef,useEffect } from 'react';
 
 import "./Desktop1.css";
 import { Navbar, Nav, Button } from 'react-bootstrap';
@@ -11,9 +11,16 @@ import { useTranslation } from 'react-i18next';
 
 
 const Desktop1 = () => {
+ 
+  const handleRectangleClick = () => {
+    if (lastRectangleRef.current) {
+      lastRectangleRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   const { t, i18n } = useTranslation();
   console.log('Current language:', i18n.language);
+  
 
   const changeLanguage = (lng) => {
     console.log(`Changing language to ${lng}`);
@@ -22,6 +29,7 @@ const Desktop1 = () => {
   
 
   const [showMore, setShowMore] = useState(false);
+  const lastRectangleRef = useRef(null);
 
   const buttonStyle = {
     width: '220px',
@@ -33,6 +41,12 @@ const Desktop1 = () => {
     console.log("handleMoreClick called");
     setShowMore(!showMore);
   };
+  useEffect(() => {
+    if (showMore && lastRectangleRef.current) {
+      lastRectangleRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [showMore]);
+
 
   
   return (
@@ -48,7 +62,7 @@ const Desktop1 = () => {
     <div className="desktop-1">
       
       
-      <div className="desktop-1-child" />
+      
       
       <img
         className="austin-distel-h1rw-nftuyc-unsp-icon"
@@ -56,7 +70,7 @@ const Desktop1 = () => {
         src="/austindistelh1rwnftuycunsplash-1@2x.png"
       />
       
-      <div className="desktop-1-item" />
+      
       <div className="desktop-1-inner" />
      
 
@@ -90,10 +104,10 @@ const Desktop1 = () => {
         </div>
       </Navbar>
       <div className="rectangle-div" />
-      <div className="desktop-1-child1" />
+      
 
       <img className="group-icon" alt="" src="/group-2@2x.png" />
-      <div className="desktop-1-child2" />
+      
       
       <div className="search-form">
   <div className="location">
@@ -116,10 +130,10 @@ const Desktop1 = () => {
       <div className="subscribed-lawyer">+200 subscribed lawyer</div>
       <b className="top-rated-lawyers-near">Top-rated lawyers near you</b>
       
-      <div className="desktop-1-child3" />
-      <div className="desktop-1-child4" />
+      
       <div className="rectangle-parent">
-        <div className="group-child" />
+        
+        <div className="group-child"  />
         <img className="mask-group-icon" alt="" src="/mask-group@2x.png" />
         <b className="hamoudi-iyad">hamoudi iyad</b>
         <address className="medea">
@@ -139,19 +153,19 @@ const Desktop1 = () => {
         <img className="group-item" alt="" src="/group-155@2x.png" />
         <img className="group-inner" alt="" src="/group-156@2x.png" />
         <img className="group-child1" alt="" src="/vector-2@2x.png" />
-        <div className="group-child2" />
+        
         <img
           className="fi-sr-phone-call-icon"
           alt=""
           src="/fisrphonecall@2x.png"
         />
-        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none' }}>see profile</button></div>
+        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none' ,width:'190px',height:'40px'}}>see profile</button></div>
       </div>
       {showMore && (
         <>
         <b className="lawyers">Lawyers</b>
-      <div className="rectangle-group">
-        <div className="group-child" />
+       <div className="rectangle-group" ref={lastRectangleRef}>
+         <div className="group-child "  />
         <img className="mask-group-icon" alt="" src="/mask-group@2x.png" />
         <b className="hamoudi-iyad">hamoudi iyad</b>
         <address className="medea">
@@ -171,13 +185,13 @@ const Desktop1 = () => {
         <img className="group-item" alt="" src="/group-155@2x.png" />
         <img className="group-inner" alt="" src="/group-156@2x.png" />
         <img className="group-child1" alt="" src="/vector-2@2x.png" />
-        <div className="group-child2" />
+        
         <img
           className="fi-sr-phone-call-icon"
           alt=""
           src="/fisrphonecall@2x.png"
         />
-        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none' }}>see profile</button></div>
+        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none' ,width:'190px',height:'40px' }}>see profile</button></div>
       </div>
       <div className="rectangle-container">
         <div className="group-child" />
@@ -200,16 +214,16 @@ const Desktop1 = () => {
         <img className="group-item" alt="" src="/group-155@2x.png" />
         <img className="group-inner" alt="" src="/group-156@2x.png" />
         <img className="group-child1" alt="" src="/vector-2@2x.png" />
-        <div className="group-child2" />
+        
         <img
           className="fi-sr-phone-call-icon"
           alt=""
           src="/fisrphonecall@2x.png"
         />
-        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none' }}>see profile</button></div>
+        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none' ,width:'190px',height:'40px' }}>see profile</button></div>
       </div>
       <div className="group-div">
-        <div className="group-child" />
+        <div className="group-child"   />
         <img className="mask-group-icon" alt="" src="/mask-group@2x.png" />
         <b className="hamoudi-iyad">hamoudi iyad</b>
         <address className="medea">
@@ -229,16 +243,16 @@ const Desktop1 = () => {
         <img className="group-item" alt="" src="/group-155@2x.png" />
         <img className="group-inner" alt="" src="/group-156@2x.png" />
         <img className="group-child1" alt="" src="/vector-2@2x.png" />
-        <div className="group-child2" />
+        
         <img
           className="fi-sr-phone-call-icon"
           alt=""
           src="/fisrphonecall@2x.png"
         />
-        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none' }}>see profile</button></div>
+        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none' ,width:'190px',height:'40px' }}>see profile</button></div>
       </div>
       <div className="rectangle-parent1">
-        <div className="group-child" />
+        <div className="group-child"  />
         <img className="mask-group-icon" alt="" src="/mask-group@2x.png" />
         <b className="hamoudi-iyad">hamoudi iyad</b>
         <address className="medea">
@@ -258,13 +272,13 @@ const Desktop1 = () => {
         <img className="group-item" alt="" src="/group-155@2x.png" />
         <img className="group-inner" alt="" src="/group-156@2x.png" />
         <img className="group-child1" alt="" src="/vector-2@2x.png" />
-        <div className="group-child2" />
+        
         <img
           className="fi-sr-phone-call-icon"
           alt=""
           src="/fisrphonecall@2x.png"
         />
-       <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none' }}>see profile</button></div>
+       <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none'  ,width:'190px',height:'40px'}}>see profile</button></div>
       </div>
       
         
@@ -289,16 +303,16 @@ const Desktop1 = () => {
         <img className="group-item" alt="" src="/group-155@2x.png" />
         <img className="group-inner" alt="" src="/group-156@2x.png" />
         <img className="group-child1" alt="" src="/vector-2@2x.png" />
-        <div className="group-child2" />
+        
         <img
           className="fi-sr-phone-call-icon"
           alt=""
           src="/fisrphonecall@2x.png"
         />
-        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none' }}>see profile</button></div>
+        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none' ,width:'190px',height:'40px' }}>see profile</button></div>
       </div>
       <div className="rectangle-parent3">
-        <div className="group-child" />
+        <div className="group-child"  />
         <img className="mask-group-icon" alt="" src="/mask-group@2x.png" />
         <b className="hamoudi-iyad">hamoudi iyad</b>
         <address className="medea">
@@ -318,13 +332,13 @@ const Desktop1 = () => {
         <img className="group-item" alt="" src="/group-155@2x.png" />
         <img className="group-inner" alt="" src="/group-156@2x.png" />
         <img className="group-child1" alt="" src="/vector-2@2x.png" />
-        <div className="group-child2" />
+        
         <img
           className="fi-sr-phone-call-icon"
           alt=""
           src="/fisrphonecall@2x.png"
         />
-        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none' }}>see profile</button></div>
+        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none'  ,width:'190px',height:'40px'}}>see profile</button></div>
       </div>
       </>
       )}
