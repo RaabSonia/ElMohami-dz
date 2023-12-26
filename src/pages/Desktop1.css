@@ -1,0 +1,464 @@
+
+.desktop-1-child {
+  position: absolute;
+  top: 817px;
+  left: 319px;
+  background-color: var(--color-white);
+  width: 779px;
+  height: 47px;
+}
+
+.austin-distel-h1rw-nftuyc-unsp-icon {
+  position: absolute;
+  top: 0;
+  left: -67px;
+  width: 1575px;
+  height: 723px;
+  object-fit: cover;
+}
+
+.desktop-1-item {
+  position: absolute;
+  top: 42px;
+  left: 1109px;
+  background-color: transparent;
+  width: 280px;
+  height: 69px;
+}
+.desktop-1-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.623);
+  width: 174px;
+  height: 123px;
+}
+
+.about .nav-link,
+.fq .nav-link {
+  color: white !important;
+}
+.login-as-lawyer {
+  position: absolute;
+  top: 58px;
+  left: 1158px;
+  font-size: x-large;
+  font-weight: 500;
+  color: var(--color-white);
+  background-color: springgreen; /* Couleur de fond du bouton */
+  padding: 10px 20px; /* Espacement interne du bouton */
+  border: none; /* Supprime la bordure par défaut du bouton */
+  border-radius: 5px; /* Ajoute des coins arrondis au bouton */
+  cursor: pointer; /* Change le curseur au survol du bouton */
+}
+
+.login-as-lawyer:hover {
+  background-color: springgreen; /* Couleur de fond du bouton au survol */
+  color: var(--color-white); /* Couleur du texte au survol */
+}
+
+.desktop-1-child1,
+
+
+.about {
+  top: 45px;
+  left: 956px;
+  font-weight: 1000;
+  font-size: x-large;
+  color: var(--color-white);
+  background-color: transparent; /* Couleur de fond du bouton */
+  padding: 10px 20px; /* Espacement interne du bouton */
+  border: none; /* Supprime la bordure par défaut du bouton */
+  border-radius: 5px; /* Ajoute des coins arrondis au bouton */
+  cursor: pointer; /* Change le curseur au survol du bouton */
+}
+.about,
+.fq,
+.group-icon {
+  position: absolute;
+}
+.fq {
+  top: 45px;
+  left: 842px;
+
+  font-weight: 1000;
+  font-size: x-large;
+  color: var(--color-white);
+  background-color: transparent; /* Couleur de fond du bouton */
+  padding: 10px 20px; /* Espacement interne du bouton */
+  border: none; /* Supprime la bordure par défaut du bouton */
+  border-radius: 5px; /* Ajoute des coins arrondis au bouton */
+  cursor: pointer; /* Change le curseur au survol du bouton */
+}
+
+.group-icon {
+  
+  top: 22px;
+  left: 39px;
+  width: 89.1px;
+  height: 89.1px;
+  object-fit: contain;
+}
+.the-place-to {
+  position: absolute;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.the-place-to {
+  position: absolute;
+  text-transform: capitalize;
+  top: 196px;
+  left: 95px;
+  font-size: 96px;
+  color: var(--color-white);
+  display: inline-block;
+  width: 784px;
+}
+.rectangle-div {
+  position: absolute;
+  top: 550px;
+  left: 411px;
+  border-radius: var(--br-12xs);
+  background-color: var(--color-whitesmoke);
+  width: 948px;
+  height: 90px;
+  border-radius: 5px;
+}
+
+
+.location {
+  position: absolute;
+  top: 550px;
+  left: 890px;
+  font-size: xx-large;
+  font-weight: 800;
+  color: var(--color-black);
+  padding: 10px 20px; /* Espacement interne du bouton */
+  border: none; /* Supprime la bordure par défaut du bouton */
+  border-radius: 2px; /* Ajoute des coins arrondis au bouton */
+  cursor: pointer; /* Change le curseur au survol du bouton */
+}
+.lawer-search {
+  color: #acadac;
+  border: none; /* Supprime la bordure par défaut du bouton */
+  border-radius: 5px; /* Ajoute des coins arrondis au bouton */
+  cursor: pointer; /* Change le curseur au survol du bouton */
+
+}
+
+.find-a-lawyer,
+.lawer-name {
+  position: absolute;
+  top: 571px;
+  left: 469px;
+  font-weight: 100;
+  color: var(--color-black);
+  border: none;
+  border-radius: 5px; /* Add border-radius for input */
+
+}
+.find-a-lawyer {
+  position: absolute;
+  top: 564px;
+  left: 1149px;
+  font-size: x-large;
+  color: var(--color-white);
+  background-color: #1d361c; /* Couleur de fond du bouton */
+  padding: 10px 20px; /* Espacement interne du bouton */
+  border: none; /* Supprime la bordure par défaut du bouton */
+  border-radius: 5px; /* Ajoute des coins arrondis au bouton */
+  cursor: pointer; /* Change le curseur au survol du bouton */
+  height: 57px;
+  text-transform: capitalize;
+}
+.lawer-search{
+  display: flex;
+  align-items: center;
+}
+.subscribed-lawyer,
+
+
+.subscribed-lawyer {
+  position: absolute;
+  top: 740px;
+  left: 108px;
+  font-size: var(--font-size-29xl);
+  text-transform: capitalize;
+}
+.lawyers,
+.top-rated-lawyers-near {
+  position: absolute;
+  top: 951px;
+  left: 108px;
+  font-size: var(--font-size-29xl);
+  text-transform: capitalize;
+}
+.lawyers {
+  top: 1807px;
+  left: 114px;
+}
+.desktop-1-child3,
+.desktop-1-child4,
+.group-child {
+  position: absolute;
+  top: 1082px;
+  left: 511px;
+  background-color: var(--color-whitesmoke);
+  box-shadow: 0 0 65.6px 15px rgba(111, 244, 108, 0.04);
+  width: 413px;
+  height: 559px;
+}
+.desktop-1-child4,
+.group-child {
+  left: 980px;
+}
+.group-child {
+  top: 0;
+  left: 0;
+}
+.mask-group-icon {
+  position: absolute;
+  top: 36px;
+  left: 25px;
+  width: 145px;
+  height: 145px;
+  object-fit: cover;
+}
+.hamoudi-iyad,
+.medea {
+  position: absolute;
+  top: 66px;
+  left: 206px;
+  font-size: var(--font-size-xl);
+  text-transform: capitalize;
+}
+.medea {
+  top: 138px;
+  left: 234px;
+  font-size: var(--font-size-mini);
+}
+.ftyguhjc-jhv-jzdh,
+.ftyguhjc-jhv-jzdh1 {
+  position: absolute;
+  top: 246px;
+  left: 42px;
+  text-transform: capitalize;
+  color: var(--color-darkslategray-200);
+  display: inline-block;
+  width: 338px;
+}
+.ftyguhjc-jhv-jzdh1 {
+  top: 356px;
+  left: 37px;
+  color: var(--color-cadetblue);
+}
+.group-item {
+  width: 31.23%;
+  top: 103px;
+  right: 18.89%;
+  left: 49.88%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 24px;
+}
+.group-child1,
+.group-inner,
+.group-item {
+  position: absolute;
+  object-fit: cover;
+}
+.group-inner {
+  top: 138px;
+  left: 210px;
+  width: 13.27px;
+  height: 20px;
+}
+.group-child1 {
+  top: 221px;
+  left: 32px;
+  max-height: 100%;
+  width: 350px;
+}
+.group-child2 {
+  position: absolute;
+  top: 460px;
+  left: 32px;
+  background-color: var(--color-springgreen);
+  width: 276px;
+  height: 69px;
+}
+.fi-sr-phone-call-icon {
+  position: absolute;
+  top: 481px;
+  left: 341px;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.see-profile {
+  position: absolute;
+  top: 477px;
+  left: 104px;
+  font-size: var(--font-size-5xl);
+  text-transform: capitalize;
+  color: var(--color-whitesmoke);
+}
+.rectangle-group,
+.rectangle-parent {
+  position: absolute;
+  top: 1086px;
+  left: 47px;
+  width: 413px;
+  height: 559px;
+  font-size: var(--font-size-smi);
+}
+.rectangle-group {
+  top: 1948px;
+  left: 69px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.group-div,
+.rectangle-container,
+.rectangle-parent1,
+.rectangle-parent2,
+.rectangle-parent3 {
+  position: absolute;
+  top: 2587px;
+  left: 77px;
+  width: 413px;
+  height: 559px;
+  font-size: var(--font-size-smi);
+}
+.group-div,
+.rectangle-parent1,
+.rectangle-parent2,
+.rectangle-parent3 {
+  top: 1950px;
+  left: 531px;
+}
+.rectangle-parent1,
+.rectangle-parent2,
+.rectangle-parent3 {
+  top: 2589px;
+  left: 539px;
+}
+.rectangle-parent2,
+.rectangle-parent3 {
+  top: 1929px;
+  left: 992px;
+}
+.rectangle-parent3 {
+  top: 2568px;
+  left: 1000px;
+}
+.more {
+  position: absolute;
+  top: 1686px;
+  left: 108px;
+  text-decoration: underline;
+  text-transform: capitalize;
+  color: #2e1ee8;
+}
+.desktop-1 {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 3265px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-darkslategray-100);
+  font-family: var(--font-poppins);
+}
+@media (max-width: 768px) {
+  /* Add responsive styles for screens up to 768px wide */
+  .desktop-1-child {
+    top: 600px;
+    left: 10px;
+    width: 90%;
+  }
+
+  .austin-distel-h1rw-nftuyc-unsp-icon {
+    left: -20px;
+    width: 103%;
+    height: 900;
+  }
+
+  .desktop-1-item {
+    top: 100px;
+    left: 10px;
+    width: 90%;
+  }
+
+  .about,
+  .fq {
+    top: 20px;
+    left: 20px;
+    font-size: 14px;
+    
+  }
+  .rectangle-div {
+    top: 600px;
+    left: 5px;
+    font-size: x-small;
+    width: 490px;
+    
+    
+  }
+  .lawer-search {
+    
+    top: 630px;
+    left: 10px;
+    font-size: small; /* Adjust the font size for smaller screens */
+  }
+
+  .lawer-name {
+    top: 630px;
+    left: 10px;
+    width: 100px;
+    font-size: small;
+  }
+  
+
+  .location {
+    top: 600px;
+    left: 100px;
+    font-size: x-small;
+    width: 170px;
+    height: 50px;
+  }
+
+  .find-a-lawyer {
+    top: 610px;
+    left: 350px;
+    font-size: large;
+    height: 60px;
+    width: 135px;
+    
+  }
+
+  .the-place-to {
+    top: 290px;
+    left: 20px;
+    font-size: 50px;
+    width: 90%;
+    right: 50px; 
+  }
+ 
+
+  .group-icon {
+    top: 10px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+  }
+  
+
+
+  
+}
+
+
+
+

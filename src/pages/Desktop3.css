@@ -1,0 +1,250 @@
+.desktop-3-child {
+  position: absolute;
+  top: 1181px;
+  left: 61px;
+  border-radius: 1px;
+  background-color: var(--color-whitesmoke);
+  width: 1328px;
+  height: 768px;
+}
+.desktop-3-item {
+  position: absolute;
+  top: 261px;
+  left: 0;
+  background-color: var(--color-darkslategray-100);
+  width: 309px;
+  height: 586px;
+}
+.desktop-3-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.72);
+  width: 174px;
+  height: 123px;
+}
+
+
+.about .nav-link,
+.fq .nav-link {
+  color: rgb(40, 39, 39) !important;
+}
+.login-as-lawyer {
+  position: absolute;
+  top: 58px;
+  left: 1158px;
+  font-size: x-large;
+  font-weight: 500;
+  color: var(--color-white);
+  background-color: springgreen; /* Couleur de fond du bouton */
+  padding: 10px 20px; /* Espacement interne du bouton */
+  border: none; /* Supprime la bordure par défaut du bouton */
+  border-radius: 5px; /* Ajoute des coins arrondis au bouton */
+  cursor: pointer; /* Change le curseur au survol du bouton */
+}
+
+.login-as-lawyer:hover {
+  background-color: springgreen; /* Couleur de fond du bouton au survol */
+  color: var(--color-white); /* Couleur du texte au survol */
+}
+
+.desktop-3-child1,
+
+
+.about {
+  top: 45px;
+  left: 956px;
+  font-weight: 1000;
+  font-size: x-large;
+  color: var(--color-white);
+  background-color: transparent; /* Couleur de fond du bouton */
+  padding: 10px 20px; /* Espacement interne du bouton */
+  border: none; /* Supprime la bordure par défaut du bouton */
+  border-radius: 5px; /* Ajoute des coins arrondis au bouton */
+  cursor: pointer; /* Change le curseur au survol du bouton */
+}
+.about,
+.fq,
+.group-icon {
+  position: absolute;
+}
+.fq {
+  top: 45px;
+  left: 842px;
+
+  font-weight: 1000;
+  font-size: x-large;
+  color: var(--color-white);
+  background-color: transparent; /* Couleur de fond du bouton */
+  padding: 10px 20px; /* Espacement interne du bouton */
+  border: none; /* Supprime la bordure par défaut du bouton */
+  border-radius: 5px; /* Ajoute des coins arrondis au bouton */
+  cursor: pointer; /* Change le curseur au survol du bouton */
+}
+
+.group-icon {
+  
+  top: 22px;
+  left: 39px;
+  width: 89.1px;
+  height: 89.1px;
+  object-fit: contain;
+}
+.janko-ferlic-g-jo31esure-unspl-icon {
+  position: absolute;
+  top: 217px;
+  left: 114px;
+  width: 356px;
+  height: 556px;
+  object-fit: cover;
+}
+.hamoudi-iyad {
+  position: absolute;
+  top: 242px;
+  left: 524px;
+  font-size: 64px;
+  text-transform: capitalize;
+  color: var(--color-darkslategray-100);
+}
+.desktop-3-child1 {
+  position: absolute;
+  width: 19.23%;
+  top: 412px;
+  right: 44.38%;
+  left: 36.39%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 51.52px;
+  object-fit: cover;
+}
+.roleee {
+  display: flex;
+  flex-direction: row;  
+  position: relative;
+  margin-bottom: 10px;
+  top: 168px;
+  left: 250px;
+  font-size: var(--font-size-13xl);
+  width: 600px;
+  color: #0c0c0c;
+}
+.roleee li {
+  margin-bottom: 1px; /* Adjust the value for the space between <li> elements */
+}
+
+.ftyguhjc-jhv-jzdh,
+.gqghjkc-qjck-n {
+  position: absolute;
+  top: 495px;
+  left: 528px;
+  text-transform: capitalize;
+  color: var(--color-darkslategray-200);
+  display: inline-block;
+  width: 837px;
+}
+.gqghjkc-qjck-n {
+  top: 1847px;
+  left: 108px;
+}
+.desktop-3-child2,
+.desktop-3-child3 {
+  position: absolute;
+  background-color: var(--color-darkslategray-100);
+  height: 128px;
+}
+.desktop-3-child2 {
+  top: 718px;
+  left: 541px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 493px;
+}
+.desktop-3-child3 {
+  top: 921px;
+  left: -40px;
+  width: 1440px;
+}
+.fi-sr-envelope-icon,
+.fi-sr-phone-call-icon,
+.globe-icon {
+  position: absolute;
+  top: 759px;
+  left: 1182px;
+  width: 46px;
+  height: 46px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.fi-sr-phone-call-icon,
+.globe-icon {
+  top: 763px;
+  left: 1276px;
+  width: 39px;
+  height: 39px;
+}
+.globe-icon {
+  top: 756px;
+  left: 1082px;
+  width: 52px;
+  height: 52px;
+}
+.set-a-rendvu {
+  position: absolute;
+  top: 378px;
+  left: 300px;
+  font-size: 40px;
+  font-weight: 500;
+  color: aliceblue;
+  background-color: #1d361c;
+  width: 300px;
+}
+.desktop-3-child4 {
+  position: absolute;
+  top: 950px;
+  left: 488px;
+  background-color: var(--color-white);
+  width: 212px;
+  height: 99px;
+}
+.about1,
+.cost,
+.location,
+.reviws {
+  position: absolute;
+  top: 964px;
+  left: 292px;
+  font-size: var(--font-size-13xl);
+  font-weight: 500;
+}
+.cost,
+.location,
+.reviws {
+  left: 533px;
+  color: var(--color-darkslategray-100);
+}
+.cost,
+.reviws {
+  left: 801px;
+  color: var(--color-whitesmoke);
+}
+.cost {
+  left: 1033px;
+}
+.istockphoto-651783402-1024x102-icon {
+  position: absolute;
+  top: 1191px;
+  left: 52px;
+  width: 1336px;
+  height: 582px;
+  object-fit: cover;
+}
+.desktop-3 {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 2057px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}

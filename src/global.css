@@ -1,0 +1,47 @@
+/* global.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-poppins: 'Poppins', sans-serif;
+
+  --color-white: #ffffff; /* or any other white color value */
+
+  /* font sizes */
+  --font-size-5xl: 24px;
+  --font-size-smi: 13px;
+  --font-size-mini: 15px;
+  --font-size-xl: 20px;
+  --font-size-29xl: 48px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-whitesmoke: #f5f5f5;
+  --color-springgreen: #6ff46c;
+  --color-cadetblue: rgba(68, 146, 164, 0.74);
+  --color-darkslategray-100: #1d371d;
+  --color-darkslategray-200: rgba(29, 55, 29, 0.74);
+  --color-black: #000;
+
+  /* Border radiuses */
+  --br-12xs: 1px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-5xl: 18px;
+    --font-size-smi: 12px;
+    --font-size-mini: 14px;
+    --font-size-xl: 18px;
+    --font-size-29xl: 36px;
+  }
+
+  body {
+    font-size: 14px; /* Adjust the base font size for smaller screens */
+  }
+}
