@@ -3,9 +3,24 @@ import React,{ useState } from 'react';
 import "./Desktop3.css";
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
+import MapLink from './Maplink'; 
 
 
 const Desktop3 = () => {
+
+  const handleImageClick = ()  => {
+    const latitude = 48.858844;
+    const longitude = 2.294350;
+  
+    // Create a dynamic link
+    const mapsUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
+  
+    // Open a new window with the link
+    const newWindow = window.open(mapsUrl, '_blank');
+  
+    // Optionally, you can focus on the new window
+    newWindow.focus();
+  };
   return (
     <div className="desktop-3">
       <div className="desktop-3-child" />
@@ -70,14 +85,25 @@ const Desktop3 = () => {
       <div className="set-a-rendvu">
       <button type="submit" className="set-a-rendvu">set-a-rendvu</button></div>
       <div className="desktop-3-child4" />
-      <div className="about1">about</div>
-      <div className="location">location</div>
-      <div className="reviws">Reviws</div>
-      <div className="cost">cost</div>
-      <img
+      <div className="about1"><a className="nav-link2"  href="#">
+              About
+            </a></div>
+      <div className="location"> <a className="nav-link2 active"  aria-current="page" href="#">
+              Location
+            </a></div>
+      <div className="reviws"><a className="nav-link2" href="#">
+              Reviews
+            </a></div>
+      <div className="cost"><a className="nav-link2" href="#">
+              Cost
+            </a></div>
+      
+            <img
         className="istockphoto-651783402-1024x102-icon"
         alt=""
         src="/istockphoto6517834021024x1024-1@2x.png"
+        onClick={handleImageClick}
+        style={{ cursor: 'pointer' }}
       />
     </div>
   );

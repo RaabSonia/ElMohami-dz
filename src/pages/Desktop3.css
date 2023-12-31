@@ -204,6 +204,7 @@
   background-color: var(--color-white);
   width: 212px;
   height: 99px;
+  text-decoration: none;
 }
 .about1,
 .cost,
@@ -214,21 +215,36 @@
   left: 292px;
   font-size: var(--font-size-13xl);
   font-weight: 500;
+  text-decoration: none;
 }
 .cost,
 .location,
 .reviws {
   left: 533px;
   color: var(--color-darkslategray-100);
+  text-decoration: none;
 }
 .cost,
 .reviws {
   left: 801px;
   color: var(--color-whitesmoke);
+  text-decoration: none;
 }
 .cost {
   left: 1033px;
+  text-decoration: none;
 }
+.nav-link2 {
+  text-decoration: none; /* Remove underlining for all links */
+  color: inherit; /* Inherit the color from the parent */
+}
+
+/* Style the active link */
+.nav-link2.active {
+  font-weight: bold; /* Optionally make the active link bold */
+  
+}
+
 .istockphoto-651783402-1024x102-icon {
   position: absolute;
   top: 1191px;
@@ -236,6 +252,7 @@
   width: 1336px;
   height: 582px;
   object-fit: cover;
+  /* Add any additional styles specific to the map container */
 }
 .desktop-3 {
   position: relative;

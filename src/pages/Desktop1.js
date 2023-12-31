@@ -350,4 +350,3 @@ const Desktop1 = () => {
 };
 
 export default Desktop1;
-
