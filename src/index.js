@@ -10,6 +10,8 @@ import i18n from './i18n';
 
 import 'bootstrap/dist/css/bootstrap.css';
 
+
+
 const container = document.getElementById("root");
 const root = createRoot(container);
 

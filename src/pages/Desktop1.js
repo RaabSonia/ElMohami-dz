@@ -3,7 +3,7 @@ import React,{ useState , useRef,useEffect } from 'react';
 import "./Desktop1.css";
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -11,11 +11,15 @@ import { useTranslation } from 'react-i18next';
 
 
 const Desktop1 = () => {
- 
+  const navigate = useNavigate();
   const handleRectangleClick = () => {
     if (lastRectangleRef.current) {
       lastRectangleRef.current.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+  const handleAboutClick = () => {
+    console.log('About link clicked');
+    navigate('/desktop2');
   };
 
   const { t, i18n } = useTranslation();
@@ -51,17 +55,10 @@ const Desktop1 = () => {
   
   return (
     
-    <div>
-    <Button onClick={() => changeLanguage('fr')} variant="outline-light">
-      🇫🇷
-    </Button>
-    <Button onClick={() => changeLanguage('ar')} variant="outline-light">
-      🇦🇪
-    </Button>
+    
+    
     
     <div className="desktop-1">
-      
-      
       
       
       <img
@@ -71,47 +68,57 @@ const Desktop1 = () => {
       />
       
       
-      <div className="desktop-1-inner" />
-     
-
+   
       
-           {/* Bootstrap Navbar */}
-           <Navbar bg="light" expand="lg" >
-        <Navbar.Brand href="#home">
-          <img
-            className="austin-distel-h1rw-nftuyc-unsp-icon"
-            alt=""
-            src="/austindistelh1rwnftuycunsplash-1@2x.png"
-          />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          {/* Bootstrap Nav */}
-          <Nav className="about" >
-            {/* Navigation items */}
-            <Nav.Link href="#about" >{t('About')}</Nav.Link>
-           </Nav>
-           <Nav className="fq">
-            {/* Navigation items */}
-            <Nav.Link href="#faq">{t('F&Q')}</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-        <div className="login-btn">
-          {/* Bootstrap Button */}
-          <Button className="login-as-lawyer" variant="outline-success">
-            Login as Lawyer
-          </Button>
-        </div>
-      </Navbar>
-      <div className="rectangle-div" />
-      
-
+      <Navbar bg="transparent" expand="lg" className="custom-navbar">
+  <Navbar.Brand href="#home"></Navbar.Brand>
+  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+  <Navbar.Collapse id="basic-navbar-nav">
+    <Nav className="mr-auto">
+      <Nav.Link
+        href="#home"
+        className="about"
+        style={{ color: 'white' }}
+        onClick={() => navigate('/desktop2')}
+      >
+        About
+      </Nav.Link>
+      <Nav.Link href="#" className="fq" style={{ color: 'white' }}>
+        F&Q
+      </Nav.Link>
+      {/* Add your other navigation links here */}
+    </Nav>
+    <div className="ml-auto login-btn">
+      <Button className="login-as-lawyer" variant="outline-success">
+        Login as Lawyer
+      </Button>
       <img className="group-icon" alt="" src="/group-2@2x.png" />
-      
+    </div>
+  </Navbar.Collapse>
+</Navbar>
+
+{/* Responsive buttons positioned at the bottom-right */}
+<div className="fixed-bottom text-right">
+  <Nav className="mr-auto">
+    <Nav.Link
+      href="#home"
+      className="about"
+      style={{ color: 'white' }}
+      onClick={() => navigate('/desktop2')}
+    >
+      About
+    </Nav.Link>
+    <Nav.Link href="#" className="fq" style={{ color: 'white' }}>
+      F&Q
+    </Nav.Link>
+    {/* Add your other navigation links here */}
+  </Nav>
+</div>
+<div className="rectangle-div" />
       
       <div className="search-form">
   <div className="location">
-    <button className="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style={buttonStyle}>
+    <button className="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style={{width:'200px',height:'60px',left:'120px'}}>
       Location
     </button>
     <ul className="dropdown-menu">
@@ -122,7 +129,7 @@ const Desktop1 = () => {
   </div>
   <form className="lawer-search">
     <input type="text" placeholder="Lawyer Name" className="lawer-name" id="lawyerName" />
-    <button type="submit" className="find-a-lawyer">Find a Lawyer</button>
+    <button type="submit" className="find-a-lawyer" onClick={() => navigate('/desktop3')}>Find a Lawyer</button>
   </form>
   <div className="the-place-to">the place to find truth</div>
  </div>
@@ -159,7 +166,10 @@ const Desktop1 = () => {
           alt=""
           src="/fisrphonecall@2x.png"
         />
-        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none' ,width:'190px',height:'40px'}}>see profile</button></div>
+        <div><button
+            className="see-profile"
+            style={{ backgroundColor: '#6ff46c', border: 'none', width: '190px', height: '40px' }}
+            onClick={() => navigate('/desktop2')} >see profile</button></div>
       </div>
       {showMore && (
         <>
@@ -191,7 +201,7 @@ const Desktop1 = () => {
           alt=""
           src="/fisrphonecall@2x.png"
         />
-        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none' ,width:'190px',height:'40px' }}>see profile</button></div>
+        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none' ,width:'190px',height:'40px' }}onClick={() => navigate('/desktop2')}>see profile</button></div>
       </div>
       <div className="rectangle-container">
         <div className="group-child" />
@@ -220,7 +230,7 @@ const Desktop1 = () => {
           alt=""
           src="/fisrphonecall@2x.png"
         />
-        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none' ,width:'190px',height:'40px' }}>see profile</button></div>
+        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none' ,width:'190px',height:'40px' }} onClick={() => navigate('/desktop2')}>see profile</button></div>
       </div>
       <div className="group-div">
         <div className="group-child"   />
@@ -249,7 +259,7 @@ const Desktop1 = () => {
           alt=""
           src="/fisrphonecall@2x.png"
         />
-        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none' ,width:'190px',height:'40px' }}>see profile</button></div>
+        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none' ,width:'190px',height:'40px' }}onClick={() => navigate('/desktop2')}>see profile</button></div>
       </div>
       <div className="rectangle-parent1">
         <div className="group-child"  />
@@ -278,7 +288,7 @@ const Desktop1 = () => {
           alt=""
           src="/fisrphonecall@2x.png"
         />
-       <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none'  ,width:'190px',height:'40px'}}>see profile</button></div>
+       <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none'  ,width:'190px',height:'40px'}} onClick={() => navigate('/desktop2')}>see profile</button></div>
       </div>
       
         
@@ -309,7 +319,7 @@ const Desktop1 = () => {
           alt=""
           src="/fisrphonecall@2x.png"
         />
-        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none' ,width:'190px',height:'40px' }}>see profile</button></div>
+        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none' ,width:'190px',height:'40px' }}onClick={() => navigate('/desktop2')} >see profile</button></div>
       </div>
       <div className="rectangle-parent3">
         <div className="group-child"  />
@@ -338,14 +348,14 @@ const Desktop1 = () => {
           alt=""
           src="/fisrphonecall@2x.png"
         />
-        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none'  ,width:'190px',height:'40px'}}>see profile</button></div>
+        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none'  ,width:'190px',height:'40px'}}onClick={() => navigate('/desktop2')}>see profile</button></div>
       </div>
       </>
       )}
       <div className="more"onClick={handleMoreClick}>more</div>
 
     </div>
-    </div>
+    
   );
 };
 

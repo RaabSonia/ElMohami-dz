@@ -1,4 +1,4 @@
-.desktop-3-child {
+.desktop-2-child {
   position: absolute;
   top: 1181px;
   left: 61px;
@@ -7,7 +7,7 @@
   width: 1328px;
   height: 768px;
 }
-.desktop-3-item {
+.desktop-2-item {
   position: absolute;
   top: 261px;
   left: 0;
@@ -15,7 +15,7 @@
   width: 309px;
   height: 586px;
 }
-.desktop-3-inner {
+.desktop-2-inner {
   position: absolute;
   top: 0;
   left: 0;
@@ -25,11 +25,11 @@
 }
 
 
-.about3 ,
-.fq3  {
+.about .nav-link,
+.fq .nav-link {
   color: rgb(40, 39, 39) !important;
 }
-.login-as-lawyer33 {
+.login-as-lawyer {
   position: absolute;
   top: 58px;
   left: 1158px;
@@ -43,15 +43,15 @@
   cursor: pointer; /* Change le curseur au survol du bouton */
 }
 
-.login-as-lawyer3:hover {
+.login-as-lawyer:hover {
   background-color: springgreen; /* Couleur de fond du bouton au survol */
   color: var(--color-white); /* Couleur du texte au survol */
 }
 
-.desktop-3-child1,
+.desktop-2-child1,
 
 
-.about3 {
+.about {
   top: 45px;
   left: 956px;
   font-weight: 1000;
@@ -63,12 +63,12 @@
   border-radius: 5px; /* Ajoute des coins arrondis au bouton */
   cursor: pointer; /* Change le curseur au survol du bouton */
 }
-.about3,
-.fq3,
-.group-icon3 {
+.about,
+.fq,
+.group-icon {
   position: absolute;
 }
-.fq3{
+.fq {
   top: 45px;
   left: 842px;
 
@@ -82,7 +82,7 @@
   cursor: pointer; /* Change le curseur au survol du bouton */
 }
 
-.group-icon3 {
+.group-icon {
   
   top: 22px;
   left: 39px;
@@ -90,7 +90,7 @@
   height: 89.1px;
   object-fit: contain;
 }
-.janko-ferlic-g-jo31esure-unspl-icon3 {
+.janko-ferlic-g-jo31esure-unspl-icon {
   position: absolute;
   top: 217px;
   left: 114px;
@@ -98,7 +98,7 @@
   height: 556px;
   object-fit: cover;
 }
-.hamoudi-iyad3 {
+.hamoudi-iyad2 {
   position: absolute;
   top: 242px;
   left: 524px;
@@ -106,7 +106,7 @@
   text-transform: capitalize;
   color: var(--color-darkslategray-100);
 }
-.desktop-3-child1 {
+.desktop-2-child1 {
   position: absolute;
   width: 19.23%;
   top: 412px;
@@ -117,7 +117,7 @@
   height: 51.52px;
   object-fit: cover;
 }
-.roleee3 {
+.roleee {
   display: flex;
   flex-direction: row;  
   position: relative;
@@ -128,12 +128,12 @@
   width: 600px;
   color: #0c0c0c;
 }
-.roleee3 li {
+.roleee li {
   margin-bottom: 1px; /* Adjust the value for the space between <li> elements */
 }
 
-.ftyguhjc-jhv-jzdh3,
-.gqghjkc-qjck-n3 {
+.ftyguhjc-jhv-jzdhh,
+.gqghjkc-qjck-n {
   position: absolute;
   top: 495px;
   left: 528px;
@@ -142,30 +142,30 @@
   display: inline-block;
   width: 837px;
 }
-.gqghjkc-qjck-n3 {
+.gqghjkc-qjck-n {
   top: 1847px;
   left: 108px;
 }
-.desktop-3-child2,
-.desktop-3-child3 {
+.desktop-2-child2,
+.desktop-2-child3 {
   position: absolute;
   background-color: var(--color-darkslategray-100);
   height: 128px;
 }
-.desktop-3-child2 {
+.desktop-2-child2 {
   top: 718px;
   left: 541px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   width: 493px;
 }
-.desktop-3-child3 {
+.desktop-2-child3 {
   top: 921px;
   left: -40px;
   width: 1440px;
 }
-.fi-sr-envelope-icon3,
-.fi-sr-phone-call-icon3,
-.globe-icon3 {
+.fi-sr-envelope-icon2,
+.fi-sr-phone-call-icon2,
+.globe-icon2 {
   position: absolute;
   top: 759px;
   left: 1182px;
@@ -174,20 +174,15 @@
   overflow: hidden;
   object-fit: cover;
 }
-.fi-sr-phone-call-icon3,
-.globe-icon3 {
+.fi-sr-phone-call-icon2,
+.globe-icon2 {
   top: 763px;
   left: 1276px;
   width: 39px;
   height: 39px;
 }
-.globe-icon3 {
-  top: 756px;
-  left: 1082px;
-  width: 52px;
-  height: 52px;
-}
-.set-a-rendvu3 {
+
+.set-a-rendvu {
   position: absolute;
   top: 378px;
   left: 300px;
@@ -197,72 +192,53 @@
   background-color: #1d361c;
   width: 300px;
 }
-.desktop-3-child4 {
+
+.desktop-2-child4 {
   position: absolute;
   top: 950px;
-  left: 488px;
+  left: 230px;
   background-color: var(--color-white);
   width: 212px;
-  height: 99px;
+  height: 100px;
   text-decoration: none;
 }
-.about3,
-.cost3,
-.location3,
-.reviws3 {
+.about1,
+.cost,
+.location2,
+.reviws {
   position: absolute;
   top: 964px;
   left: 292px;
-  font-size: var(--font-size-13xl);
-  color: var(--color-darkslategray-100);
+  font-size: var(--font-size-15xl);
   font-weight: 500;
+  color: var(--color-darkslategray-100); /* Set the default color to white */
   text-decoration: none;
 }
-.cost3,
-.location3,
-.reviws3 {
+.cost,
+.location2,
+.reviws {
   left: 533px;
-  color: var(--color-darkslategray-100);
-  text-decoration: none;
+  
+  
 }
-.cost3,
-.reviws3 {
+.cost,
+.reviws {
   left: 801px;
-  color: var(--color-whitesmoke);
-  text-decoration: none;
-}
-.cost3 {
+  font-weight: bold; }
+.cost {
   left: 1033px;
   text-decoration: none;
 }
-.nav-link3 {
+.reviws {
+  color: var(--color-darkslategray-100); /* Set the color for 'Reviews' to black */
+}
+.nav-link2 {
   text-decoration: none; /* Remove underlining for all links */
   color: inherit; /* Inherit the color from the parent */
 }
 
 /* Style the active link */
-.nav-link3.active {
+.nav-link2.active {
   font-weight: bold; /* Optionally make the active link bold */
   
-}
-
-.istockphoto-651783402-1024x102-icon3 {
-  position: absolute;
-  top: 1191px;
-  left: 52px;
-  width: 1336px;
-  height: 582px;
-  object-fit: cover;
-  /* Add any additional styles specific to the map container */
-}
-.desktop-3 {
-  position: relative;
-  background-color: var(--color-white);
-  width: 100%;
-  height: 2057px;
-  overflow: hidden;
-  text-align: left;
-  font-size: var(--font-size-5xl);
-  color: var(--color-white);
-  font-family: var(--font-poppins);
 }

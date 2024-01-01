@@ -1,20 +1,30 @@
-
-
-
 .austin-distel-h1rw-nftuyc-unsp-icon {
   position: absolute;
   top: 0;
-  left: -67px;
-  width: 1575px;
-  height: 723px;
+  left: -10px; /* Adjust the left position as needed */
+  width: 100%; /* Make the logo width 100% to fill the container */
+  height: auto; /* Allow the height to adjust automatically */
   object-fit: cover;
 }
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
 
 
 .desktop-1-inner {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -30px;
+  left: -50px;
   background-color: rgba(255, 255, 255, 0.623);
   width: 174px;
   height: 123px;
@@ -23,7 +33,16 @@
 .about .nav-link,
 .fq .nav-link {
   color: white !important;
+  visibility: visible;
+  z-index: 1000;
+  
 }
+/* Add this CSS to your stylesheet or style block */
+.custom-navbar {
+  min-height: 50px; /* Adjust the value according to your preference */
+  background-color: transparent;
+}
+
 .login-as-lawyer {
   position: absolute;
   top: 58px;
@@ -36,6 +55,7 @@
   border: none; /* Supprime la bordure par défaut du bouton */
   border-radius: 5px; /* Ajoute des coins arrondis au bouton */
   cursor: pointer; /* Change le curseur au survol du bouton */
+  visibility: visible;
 }
 
 .login-as-lawyer:hover {
@@ -60,9 +80,7 @@
 }
 .about,
 .fq,
-.group-icon {
-  position: absolute;
-}
+
 .fq {
   top: 45px;
   left: 842px;
@@ -78,7 +96,7 @@
 }
 
 .group-icon {
-  
+  position: absolute;
   top: 22px;
   left: 39px;
   width: 89.1px;
@@ -115,7 +133,7 @@
 
 .location {
   position: absolute;
-  top: 550px;
+  top: 552px;
   left: 890px;
   font-size: xx-large;
   font-weight: 800;
@@ -392,87 +410,130 @@
   font-family: var(--font-poppins);
 }
 @media (max-width: 768px) {
+  .desktop-1 {
+    height: auto; /* Adjust the height for smaller screens */
+    padding-bottom: 3000px; /* Add padding for better spacing on smaller screens */
+  }
+
   /* Add responsive styles for screens up to 768px wide */
   .desktop-1-child {
     top: 600px;
     left: 10px;
     width: 90%;
+    font-size: 16px;
+    height: 100px;
   }
 
   .austin-distel-h1rw-nftuyc-unsp-icon {
-    left: -20px;
-    width: 103%;
-    height: 900;
-  }
+    left: -2px;
+    width: 104%;
+    height: auto;
 
-  .desktop-1-item {
-    top: 100px;
-    left: 10px;
-    width: 90%;
-  }
 
-  .about,
-  .fq {
-    top: 20px;
-    left: 20px;
-    font-size: 14px;
+
     
   }
+
+  
+  
   .rectangle-div {
-    top: 600px;
-    left: 5px;
-    font-size: x-small;
-    width: 490px;
+    top: 200px;
+    left: 20px;
+    font-size: small;
+    width: 450px;
+    height: 50px;
     
     
   }
   .lawer-search {
     
-    top: 630px;
-    left: 10px;
-    font-size: small; /* Adjust the font size for smaller screens */
+    top: 215px;
+    left: 90px;
+    font-size: x-small; /* Adjust the font size for smaller screens */
   }
 
   .lawer-name {
-    top: 630px;
-    left: 10px;
-    width: 100px;
-    font-size: small;
-  }
-  
-
-  .location {
-    top: 600px;
-    left: 100px;
+    top: 215px;
+    left: 23px;
+    width: 90px;
     font-size: x-small;
-    width: 170px;
-    height: 50px;
+  }
+  .btn-location {
+    width: 150px; /* Adjust the width for smaller screens */
+    height: 50px; /* Adjust the height for smaller screens */
+    left: 200px; /* Adjust the left position for smaller screens */
   }
 
+  .dropdown-menu {
+    /* Add responsive styles for the dropdown menu */
+    width: 150px; /* Adjust the width for smaller screens */
+  }
+
+   .subscribed-lawyer{
+    top: 290px;
+    left: 40px;
+    width: 400;
+    font-size: x-large;
+   }
   .find-a-lawyer {
-    top: 610px;
-    left: 350px;
-    font-size: large;
-    height: 60px;
-    width: 135px;
+    top: 205px;
+    left: 370px;
+    font-size: xx-small;
+    height: 40px;
+    width: 90px;
     
+  }
+  .top-rated-lawyers-near{
+    top: 400px;
+    left: 40px;
+    width: 400;
+    font-size: x-large;
   }
 
   .the-place-to {
-    top: 290px;
+    top: 120px;
     left: 20px;
-    font-size: 50px;
+    font-size: 30px;
     width: 90%;
     right: 50px; 
   }
  
 
-  .group-icon {
-    top: 10px;
-    left: 20px;
-    width: 60px;
-    height: 60px;
+  .more{
+    top: 1750px;
+    left: 200px;
+    width: 40px;
+    height: 40px;
+    
+
   }
+  .navbar-collapse {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.623); /* Adjust the background color as needed */
+    z-index: 1;
+  }
+ /* Add this CSS to your stylesheet or style block */
+
+.rectangle-parent{
+  top:600px
+}
+.more{
+  top: 1300px;
+}
+.lawyers{
+  top: 1500px;
+}
+.rectangle-group{
+  top: 1820px;
+}
+.rectangle-container{top: 2500px;}
+.group-icon {
+  top: 2px; /* Adjust the top position for smaller screens */
+  left: 5px; /* Adjust the left position for smaller screens */
+  width: 10px; /* Adjust the width for smaller screens */
+  height: 10px; /* Adjust the height for smaller screens */
+}
   
 
 

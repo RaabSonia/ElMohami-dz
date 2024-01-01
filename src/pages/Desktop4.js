@@ -1,11 +1,15 @@
 import React,{ useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import "./Desktop4.css";
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
+import"./Desktop1.css"
 
 
 const Desktop4 = () => {
+
+  const navigate = useNavigate();
   return (
     <div className="desktop-4">
       <div className="desktop-4-child" />
@@ -21,7 +25,7 @@ const Desktop4 = () => {
           {/* Bootstrap Nav */}
           <Nav className="about" >
             {/* Navigation items */}
-            <Nav.Link href="#about" >About</Nav.Link>
+            <Nav.Link href="#about"onClick={() => navigate('/desktop2')} >About</Nav.Link>
            </Nav>
            <Nav className="fq">
             {/* Navigation items */}
@@ -35,51 +39,51 @@ const Desktop4 = () => {
           </Button>
         </div>
       </Navbar>
-      <img className="group-icon" alt="" src="/group-2@2x.png" />
+      <img className="group-icon4" alt="" src="/group-2@2x.png" />
       <img
-        className="janko-ferlic-g-jo31esure-unspl-icon"
+        className="janko-ferlic-g-jo31esure-unspl-icon4"
         alt=""
         src="/jankoferlicgjo31esureunsplash-1@2x.png"
       />
-      <b className="hamoudi-iyad">hamoudi iyad</b>
+      <b className="hamoudi-iyad4">hamoudi iyad</b>
       <img className="desktop-4-child1" alt="" src="/group-155@2x.png" />
       
-      <ul className="roleee">
-          <li  className="roleee">An item</li>
-          <li  className="roleee">A second item</li>
-          <li  className="roleee">A third item</li>
+      <ul className="roleee4">
+          <li  className="roleee4">An item</li>
+          <li  className="roleee4">A second item</li>
+          <li  className="roleee4">A third item</li>
        </ul>
-      <div className="ftyguhjc-jhv-jzdh">
+      <div className="ftyguhjc-jhv-jzdh4">
         ftyguhjc jhv jzdh hdvsd sdj sjb bs s d cbnjdbshvv jzdh hdvsd sdj sjb bs
         s d cbnjdbshvv jzdh hdvsd sdj sjb bs s d cbnjdbshvv jzdh hdvsd sdj sjb
         bs s d cbnjdbshvv jzdh hdvsd sdj sjb bs s d cbnjdbshvv jzdh hdvsd sdj
         sjb bs s d cbnjdbshv
       </div>
-      <div className="gqghjkc-qjck-n">
+      <div className="gqghjkc-qjck-n4">
         gqghjkc qjck n sqvc bhjsqklc dhb hvdj n
       </div>
       
       <div className="desktop-4-child3" />
-      <img className="fi-sr-envelope-icon" alt="" src="/fisrenvelope@2x.png" />
+      <img className="fi-sr-envelope-icon4" alt="" src="/fisrenvelope@2x.png" />
       <img
-        className="fi-sr-phone-call-icon"
+        className="fi-sr-phone-call-icon4"
         alt=""
         src="/fisrphonecall@2x.png"
       />
-      <img className="globe-icon" alt="" src="/globe@2x.png" />
+      <img className="globe-icon4" alt="" src="/globe@2x.png" />
       <div className="set-a-rendvu">
-      <button type="submit" className="set-a-rendvu">set-a-rendvu</button></div>
+      <button type="submit" className="set-a-rendvu4">set-a-rendvu</button></div>
       <div className="desktop-4-child4" />
-      <div className="about1"><a className="nav-link2"  href="#">
+      <div className="about4"  style={{ color: 'white', fontSize: '1.5em' }}><a className="nav-link4"  href="#" onClick={() => navigate('/desktop2')}>
               About
             </a></div>
-      <div className="location"> <a className="nav-link2"  href="#">
+      <div className="location4" style={{  fontSize: '1.5em' }}> <a className="nav-link4"  href="#"onClick={() => navigate('/desktop3')}>
               Location
             </a></div>
-      <div className="reviws"><a className="nav-link2 active"  aria-current="page" href="#">
+      <div className="reviws4" style={{  fontSize: '1.5em',left: '788px' }}><a className="nav-link4 active"  aria-current="page" href="#"onClick={() => navigate('/desktop4')}>
               Reviews
             </a></div>
-      <div className="cost"><a className="nav-link2" href="#">
+      <div className="cost4" style={{ color: 'white', fontSize: '1.5em' }}><a className="nav-link4" href="#">
               Cost
             </a></div>
     </div>
