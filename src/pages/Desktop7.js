@@ -99,6 +99,7 @@ const Registration = () => {
                     </div>
                 </div>
         
+        
             </form>
             
                 <p className="mt-3">
