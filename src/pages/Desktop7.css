@@ -13,11 +13,6 @@
     padding: 20px;
 }
 
-.vertical-line {
-    border-left: 1px solid #cccc;
-    height: 100%;
-    margin: 0 10px;
-}
 
 .title {
     padding-top: 1rem; 
@@ -67,7 +62,7 @@
 }
 
 .years-experience label {
-    margin-right: 10px;
+    margin-right: 10.5rem;
 }
 
 .years-experience .exp-input {
@@ -102,9 +97,9 @@
 }
 
 .lang-label {
-    margin-right: 19rem; /* Espacement entre "Lang" et les options */
-    color: #889287;
-    font-size: 2em;
+    margin-right: 22rem; /* Espacement entre "Lang" et les options */
+    font-size: 1.1em;
+    color: #171717;
     margin-bottom: 0;
 }
 
@@ -145,30 +140,60 @@
 }
 
 .ccc label {
-    margin-right: 10px; /* Espacement entre le mot et la zone de texte */
+    margin-right: 15rem; /* Espacement entre le mot et la zone de texte */
     white-space: nowrap; /* Empêche le saut à la ligne du mot */
 }
 
-.buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+.ccc span {
+    white-space: nowrap; /* Empêche le saut à la ligne du texte */
 }
 
-.btn {
+.mt-3{
+    margin-top: 4rem;
+    margin-left: 3.5rem;
+
+}
+
+.telephone-group {
+    display: flex;
+    align-items: center;
+}
+
+.telephone-group label {
+    margin-right: 4rem;
+}
+
+
+
+.btn1 {
+    margin-top: 2rem;
     padding: 10px 20px;
-    border-radius: 4px;
+    border-radius: 0px;
     border: none;
     cursor: pointer;
+    width: 100%; /* Ajustez la largeur des boutons si nécessaire */
+
 }
 
+.btn2 {
+    float: right;
+    margin-top: 2rem;
+    padding: 10px 20px;
+    border-radius: 0px;
+    border: none;
+    cursor: pointer;
+    width: 40%; 
+} 
 .btn-secondary {
-    background-color: #eee;
-    color: #333;
+    background-color:#6FF46C; /* Couleur de fond pour le bouton + Resume */
+    color: white ;
+    font-weight: bold;
 }
 
 .btn-primary {
-    background-color: #6FF46C;
+    background-color: #1D371D; /* Couleur de fond pour le bouton Register */
     color: white;
+    font-weight: bold;
 }
+
+

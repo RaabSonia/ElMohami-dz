@@ -96,6 +96,7 @@ const Registration = () => {
                     <div className='ccc'>
                     <label>Cost :</label>
                     <input type="text" name="cost" value={cost} onChange={e => onChange(e)} required />
+                    <span> DZ</span>
                     </div>
                 </div>
         
@@ -106,8 +107,9 @@ const Registration = () => {
                     Already have an account? <Link to="/login">Login</Link>
                 </p>
         
+           
+
             </div>
-            <div className="vertical-line"></div>
             <div className="right-content">
             <form onSubmit={e => onSubmit(e)}>
                 <div className="form-group">
@@ -119,16 +121,20 @@ const Registration = () => {
                     <input type="password" name="password" value={password} onChange={e => onChange(e)} minLength="6" required />
                 </div>
                 <div className="form-group">
-                    <label>Phone</label>
+                    <div className='telephone-group'>
+                    <label>Tlp</label>
                     <input type="tel" name="phone" value={phone} onChange={e => onChange(e)} required />
+                    </div>
                 </div>
                 <div className="form-group">
                     <label>Location</label>
                     <input type="text" name="location" value={location} onChange={e => onChange(e)} required />
                 </div>
+                <div className="form-group">
                 <div className="buttons">
-                    <button type="button" className="btn btn-secondary">+ Resume</button>
-                    <button type="submit" className="btn btn-primary">Register</button>
+                    <button type="button" className="btn1 btn-secondary">+ Resume</button>
+                    <button type="submit" className="btn2 btn-primary">Register</button>
+                </div>
                 </div>
             </form>
         </div>
