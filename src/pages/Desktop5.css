@@ -1,0 +1,105 @@
+.login-container {
+    display: flex;
+}
+
+.left-content {
+    width: 55%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.img1 {
+    width: 11%;
+    max-width: 11%;
+    height: auto;
+}
+
+.form-content {
+    padding: 20px;
+    padding-left: 3rem ;
+    padding-right: 3rem;
+}
+
+.right-content {
+    width: 45%; 
+}
+
+.img2 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.titre {
+    padding-top: 1rem; 
+    padding-left: 0rem;
+    color: 1D371D;
+    font-size: 5em ;
+    position: relative; 
+    content: ".";
+    line-height: 1em; 
+}
+
+.titre::after {
+    content: ".";
+    color:  #6FF46C; 
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    right: 8.8cm;
+}
+
+.form-group {
+    margin-bottom: 1rem; 
+    margin-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+   
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 2em;
+    color: #889287;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem; 
+    padding-left: 2rem;
+    font-size: 1.1rem; 
+    border-radius: 0px; 
+    border: none;
+}
+
+
+
+input[type="email"],
+input[type="password"] {
+    margin-bottom: 3rem;
+    background-color: #F7F3F3;
+}
+
+button[type="submit"] {
+    float: right;
+    background-color: #6FF46C;
+    color: white;
+    padding: 0.5rem 1rem; /* Augmenter la taille du padding pour le bouton */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 0; /* Coins carrés */
+    font-weight: bold;
+    font-size: 2em; /* Augmenter la taille de la police pour le bouton */
+    margin-right: 2rem;
+   
+}
+
+button[type="submit"]:hover {
+    background-color: #6FF46C;
+}
+
+.mt-3{
+    padding-left: 2rem;
+    font-size: 1.2em;
+}

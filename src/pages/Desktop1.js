@@ -4,7 +4,7 @@ import "./Desktop1.css";
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 
 
 
@@ -88,10 +88,12 @@ const Desktop1 = () => {
       </Nav.Link>
       {/* Add your other navigation links here */}
     </Nav>
-    <div className="ml-auto login-btn">
+    <div className="ml-auto login-btn" >
+    <Link to="./Desktop5.js">
       <Button className="login-as-lawyer" variant="outline-success">
         Login as Lawyer
       </Button>
+      </Link>
       <img className="group-icon" alt="" src="/group-2@2x.png" />
     </div>
   </Navbar.Collapse>
