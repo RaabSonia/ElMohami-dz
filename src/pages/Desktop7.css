@@ -62,7 +62,7 @@
 }
 
 .years-experience label {
-    margin-right: 10.5rem;
+    margin-right: 8rem;
 }
 
 .years-experience .exp-input {
@@ -97,7 +97,7 @@
 }
 
 .lang-label {
-    margin-right: 22rem; /* Espacement entre "Lang" et les options */
+    margin-right: 20rem; /* Espacement entre "Lang" et les options */
     font-size: 1.1em;
     color: #171717;
     margin-bottom: 0;
