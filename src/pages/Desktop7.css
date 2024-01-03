@@ -13,7 +13,6 @@
     padding: 20px;
 }
 
-
 .title {
     padding-top: 1rem; 
     padding-left: 0rem;
@@ -37,7 +36,8 @@
 /* Stylisation des champs et boutons */
 
 .form-group {
-    margin-bottom: 10px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     padding-left: 4rem ;
     padding-right: 4rem;
 }
@@ -45,6 +45,7 @@
 .form-group label {
     display: block;
     margin-bottom: 5px;
+    font-size: 18px; 
 }
 
 .form-group input {
@@ -54,6 +55,7 @@
     background-color: #F7F3F3;
     border: none ;
     box-sizing: border-box;
+
 }
 .years-experience {
     display: flex;
@@ -62,7 +64,7 @@
 }
 
 .years-experience label {
-    margin-right: 8rem;
+    margin-right: 13rem;
 }
 
 .years-experience .exp-input {
@@ -97,10 +99,9 @@
 }
 
 .lang-label {
-    margin-right: 20rem; /* Espacement entre "Lang" et les options */
-    font-size: 1.1em;
+    margin-right: 22rem; /* Espacement entre "Lang" et les options */
     color: #171717;
-    margin-bottom: 0;
+
 }
 
 .lang-options {
@@ -119,7 +120,7 @@
 .lang-option p {
     margin: 0;
     margin-left: 5px;
-    color: #889287;
+    color: #1D371D;
 }
 
 .lang-circle {
@@ -172,8 +173,12 @@
     border: none;
     cursor: pointer;
     width: 100%; /* Ajustez la largeur des boutons si nécessaire */
-
+    background-color:#6FF46C; /* Couleur de fond pour le bouton + Resume */
+    color: white ;
+    font-weight: bold;
 }
+
+
 
 .btn2 {
     float: right;
@@ -183,17 +188,13 @@
     border: none;
     cursor: pointer;
     width: 40%; 
-} 
-.btn-secondary {
-    background-color:#6FF46C; /* Couleur de fond pour le bouton + Resume */
-    color: white ;
-    font-weight: bold;
-}
-
-.btn-primary {
-    background-color: #1D371D; /* Couleur de fond pour le bouton Register */
+    background-color: #1D371D; /* Modifier la couleur de fond pour le bouton Register */
     color: white;
     font-weight: bold;
-}
+
+} 
+
+
+
 
 

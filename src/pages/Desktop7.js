@@ -68,7 +68,7 @@ const Registration = () => {
                 </div>
                 <div className="form-group">
                     <div className="years-experience">
-                    <label>Years of Experience:</label>
+                    <label>Years of Exp:</label>
                     <div className="exp-input">
                     <button type="button" className="exp-button" onClick={decreaseExp}>-</button>
                     <input type="text" className="exp-text" value={experience} readOnly />
@@ -132,8 +132,8 @@ const Registration = () => {
                 </div>
                 <div className="form-group">
                 <div className="buttons">
-                    <button type="button" className="btn1 btn-secondary">+ Resume</button>
-                    <button type="submit" className="btn2 btn-primary">Register</button>
+                    <button type="button" className="btn1 ">+ Resume</button>
+                    <button type="submit" className="btn2 ">Register</button>
                 </div>
                 </div>
             </form>
