@@ -2,10 +2,19 @@ import React, { useState } from 'react';
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import "./Desktop2.css";
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Desktop2 = () => {
   const [rating, setRating] = useState(0); // État initial
 
+const handleClick1 = () => {
+    // Naviguer vers la page Desktop5 login
+    navigate("/desktop5");
+  }
+
+  
+
+  const navigate = useNavigate();
  
 
   const handleClick = (selectedRating) => {
@@ -63,6 +72,7 @@ const Desktop2 = () => {
     
      <Button className="login-as-lawyer"
              variant="outline-success"  
+             onClick={handleClick1}
              style={{
                 backgroundColor: '#6FF46C',
                 border: 'none',
