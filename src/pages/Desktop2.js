@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import "./Desktop2.css";
+import { Link } from 'react-router-dom';
 
 const Desktop2 = () => {
   const [rating, setRating] = useState(0); // État initial
