@@ -104,7 +104,7 @@ const Registration = () => {
             </form>
             
                 <p className="mt-3">
-                    Already have an account? <Link to="/login">Login</Link>
+                    Already have an account? <Link to="/Desktop5">Login</Link>
                 </p>
         
            
@@ -133,7 +133,10 @@ const Registration = () => {
                 <div className="form-group">
                 <div className="buttons">
                     <button type="button" className="btn1 ">+ Resume</button>
-                    <button type="submit" className="btn2 ">Register</button>
+                    <button type="submit" className="btn2 "
+                            style={{backgroundColor:'#1D371D',
+                                    marginRight:'-0.8cm'}}
+                    >Register</button>
                 </div>
                 </div>
             </form>
