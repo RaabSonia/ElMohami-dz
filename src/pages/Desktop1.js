@@ -11,7 +11,17 @@ import { Link } from 'react-router-dom';
 
 
 const Desktop1 = () => {
+
+  const handleClick1 = () => {
+    // Naviguer vers la page Desktop5 login
+    navigate("/desktop5");
+  }
+
+  
+
   const navigate = useNavigate();
+
+
   const handleRectangleClick = () => {
     if (lastRectangleRef.current) {
       lastRectangleRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -89,11 +99,11 @@ const Desktop1 = () => {
       {/* Add your other navigation links here */}
     </Nav>
     <div className="ml-auto login-btn" >
-    <Link to="./Desktop5.js">
-      <Button className="login-as-lawyer" variant="outline-success">
+    
+      <Button className="login-as-lawyer" variant="outline-success" onClick={handleClick1}>
         Login as Lawyer
       </Button>
-      </Link>
+      
       <img className="group-icon" alt="" src="/group-2@2x.png" />
     </div>
   </Navbar.Collapse>
@@ -350,7 +360,17 @@ const Desktop1 = () => {
           alt=""
           src="/fisrphonecall@2x.png"
         />
-        <div><button className="see-profile"style={{ backgroundColor: '#6ff46c', border: 'none'  ,width:'190px',height:'40px'}}onClick={() => navigate('/desktop2')}>see profile</button></div>
+        
+        <div>
+          <button className="see-profile"
+                  style={{ backgroundColor: '#6ff46c', 
+                  border: 'none'  ,
+                  width:'190px',
+                  height:'40px'}} 
+                  onClick={() => navigate('/desktop2')} 
+                  >see profile</button>
+                  </div>
+                  
       </div>
       </>
       )}

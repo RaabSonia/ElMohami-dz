@@ -7,6 +7,7 @@ import Desktop4 from "./pages/Desktop4"; // Corrected the import statement
 import Login from "./pages/Desktop5";
 import Registration from "./pages/Desktop7";
 
+
 function App() {
   const action = useNavigationType();
   const location = useLocation();
@@ -44,17 +45,16 @@ function App() {
   }, [pathname]);
 
   return (
-  //  <Routes>
-     // <Route path="/" element={<Desktop1 />} />
-     // <Route path="/desktop2" element={<Desktop2 />} />
-    //  <Route path="/desktop3" element={<Desktop3 />} />
-    //  <Route path="/desktop4" element={<Desktop4 />} />
-    //  <Route path="/desktop5" element={<Login />} />
-   // </Routes>
-   <Login></Login>
-   //<Registration></Registration>
-
-
+  <Routes>
+       < Route path="/" element={<Desktop1 />} />
+        <Route path="/desktop2" element={<Desktop2 />} />
+        <Route path="/desktop3" element={<Desktop3 />} />
+        <Route path="/desktop4" element={<Desktop4 />} />
+        <Route path="/desktop5" element={<Login />} />
+        <Route path="/desktop7" element={<Registration/>}/>
+    </Routes>
+  
+ 
   );
 }
 export default App;
